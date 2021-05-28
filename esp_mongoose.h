@@ -33,4 +33,6 @@
 #define MG_ENABLE_MBEDTLS 0
 #endif
 
+#include "mongoose/mongoose.h"
+
 #endif
