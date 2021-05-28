@@ -1,0 +1,26 @@
+menu "Mongoose"
+    config MG_MAX_HTTP_HEADERS
+        int "Max http headers (MG_MAX_HTTP_HEADERS)"
+        default 5
+        help
+            Define the max http header number
+
+    config MG_ENABLE_LINES
+        bool "Enable lines restart (MG_ENABLE_LINES)"
+        default n
+        help
+            It's make easy to debug
+    
+    config MG_ENABLE_DIRECTORY_LISTING
+        bool "Enable directory listing (MG_ENABLE_DIRECTORY_LISTING)"
+        default n
+    
+    config MG_ENABLE_SSI
+        bool "Enable SSI (MG_ENABLE_SSI)"
+        default n
+
+    config MG_ENABLE_MBEDTLS
+        bool "use mbedtls(MG_ENABLE_MBEDTLS)"
+        default n
+
+endmenu
