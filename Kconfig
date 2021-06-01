@@ -1,9 +1,19 @@
 menu "Mongoose"
+    config MG_DEF_CHECK_BY_VALUE
+        bool "Mongoose define check by value or #ifdef"
+        default y
+        
     config MG_MAX_HTTP_HEADERS
         int "Max http headers (MG_MAX_HTTP_HEADERS)"
         default 5
         help
             Define the max http header number
+    
+    config MG_ENABLE_SOCKETPAIR
+        bool "Enable socket pair(MG_ENABLE_SOCKETPAIR)"
+        default n
+        help
+            It's used in multi thread
 
     config MG_ENABLE_LINES
         bool "Enable lines restart (MG_ENABLE_LINES)"
